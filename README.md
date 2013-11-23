@@ -3,7 +3,7 @@ dson
 
 Dvora's Serialized Object Notation
 
-Welcome to DSON! DSON is the next generation of serialization technology. Expect to see DSON popping up all over software 
+Welcome to DSON! DSON is the next generation of serialization technology. Expect to see DSON popping up all over the software 
 scene.
 
 _Ok, I already have a serialization framework, why DSON?_
@@ -17,7 +17,7 @@ So now that you are as excited as we are, here's some sample DSON to get you sta
      {dson="true"},
      {name="dson"},
      {type="serialization framework"},
-     {age=0},
+     {age="0"},
      {awesomeness="unmeasureable"}
     }
 
