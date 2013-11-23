@@ -23,8 +23,6 @@
 
 	<build>
 		<plugins>
-			<!-- Uncomment this plugin when working in eclipse, but comment it when 
-				building on command line -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>

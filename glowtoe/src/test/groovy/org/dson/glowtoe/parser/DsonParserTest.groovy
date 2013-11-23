@@ -19,7 +19,6 @@ class DsonParserTest {
 	@Test
 	public void testValidParse_quotesInValue() {
 		def dson = '{{name="Tom \\\"Unit\\\" Test"},{age="20"},{hourlyRate="10.50"}}'
-		println dson
 		def map = new DsonParser(dson).parse()
 
 		Assert.assertEquals(3, map.size())

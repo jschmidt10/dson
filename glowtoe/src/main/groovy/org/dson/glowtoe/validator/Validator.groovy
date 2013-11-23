@@ -15,7 +15,7 @@ import org.dson.glowtoe.parser.DsonParser
  * - starting curly brace <br/>
  * - key <br/>
  * - equals sign <br/>
- * - value <br/>
+ * - value enclosed in quotes <br/>
  * - closing curly brace <br/>
  * 
  * In addition, valid DSON must contain the pair: {dson="true"}
