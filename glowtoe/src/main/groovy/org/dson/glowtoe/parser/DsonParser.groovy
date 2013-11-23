@@ -51,21 +51,28 @@ class DsonParser {
 
 	def private value() {
 		try {
-			def quoted = optionalMatchChar('"')
+			matchChar('"')
 
-			def endValueIndex = dson.indexOf(quoted ? '"' : '}', index)
+			def endValueIndex = findUnescapedQuote()
 			def value = dson.substring(index, endValueIndex)
 			index = endValueIndex
 
-			if (quoted) {
-				matchChar('"')
-			}
+			matchChar('"')
 
-			return value.trim()
+			return value.replaceAll('\\\\\"', '\"').trim()
 		}
 		catch(Exception e) {
 			throw new DsonParseException("expected value at index ${index}")
 		}
+	}
+
+	def private findUnescapedQuote() {
+		int quoteIndex = dson.indexOf('"', index)
+		while (dson[quoteIndex - 1] == '\\') {
+			quoteIndex = dson.indexOf('"', quoteIndex + 1)
+		}
+
+		return quoteIndex
 	}
 
 	def private key() {

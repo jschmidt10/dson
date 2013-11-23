@@ -19,8 +19,14 @@ class ValidatorTest {
 	}
 
 	@Test
-	public void testInvalidDson_missingDsonAttribute() {
+	public void testInvalidDson_falseDsonAttribute() {
 		def invalidDson = '{{dson="false"},{name="something"}}'
+		Assert.assertFalse(validator.isValid(invalidDson))
+	}
+
+	@Test
+	public void testInvalidDson_missingDsonAttribute() {
+		def invalidDson = '{{name="something"}}'
 		Assert.assertFalse(validator.isValid(invalidDson))
 	}
 }
