@@ -17,6 +17,7 @@ class DsonParser {
 	 * Parses a Dson string
 	 * @param dson
 	 * @return map
+	 * @throws DsonParseException
 	 */
 	def parse() throws DsonParseException {
 		dson = dson.trim()
