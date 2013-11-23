@@ -3,7 +3,6 @@ dson
 
 Dvora's Serialized Object Notation
 
-
 Welcome to DSON! DSON is the next generation of serialization technology. Expect to see DSON popping up all over software 
 scene.
 
@@ -22,12 +21,24 @@ So now that you are as excited as we are, here's some sample DSON to get you sta
      {awesomeness="unmeasureable"}
     }
 
+__LATEST DSON News__
+
+Attention DSON army! There are now two DSON invalidators checked in, with the plan for several more in coming weeks - 
+including the much anticipated RandomInvalidator which will randomly apply one or more invalidators to your DSON 
+string. Most serialization frameworks give you a way to validate their formats, but here at DSON, to provide you 
+with the most comprehensive solution suite, we also give you the power to invalidate your valid DSON! Welcome to 
+the future!
+
 __Current DSON components__
+
 + Glowtoe - the core DSON parsing utilities, including validators, parsers, generators, and invalidators
 
 __DSON FAQ__
 
+===============================
+
 _How was DSON created?_
+
 DSON was created during a conversation between Dvora (hence the name) and a coworker.  It went something like this:
 + Dvora: "I am trying to parse this string but I'm getting errors"
 + Coworker: "Why are you trying to parse this with substrings? Just use a JSON parser"
@@ -37,10 +48,15 @@ DSON was created during a conversation between Dvora (hence the name) and a cowo
 
 When the JSON parser failed, DSON was born!
 
+===============================
+
 _Who uses DSON?_
+
 DSON is the ideal serialization technology for any application. DSON is used all over industry as well as in many 
 personal development projects.  Currently, DSON is being used by the following companies and projects:
 + 
+
+===============================
 
 _How can DSON be this awesome?_
 
