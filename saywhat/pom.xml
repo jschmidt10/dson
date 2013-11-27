@@ -8,8 +8,15 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>glowtoe</artifactId>
-	<name>Glowtoe</name>
-	<description>Glowtoe contains validators, parsers, generators, and invalidators</description>
+	<artifactId>saywhat</artifactId>
+	<name>Saywhat</name>
+	<description>Saywhat is a random dson generator</description>
 
+	<dependencies>
+		<dependency>
+			<groupId>org.dson</groupId>
+			<artifactId>glowtoe</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>
