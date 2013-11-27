@@ -23,6 +23,13 @@ So now that you are as excited as we are, here's some sample DSON to get you sta
 
 __LATEST DSON News__
 
+11/27/2013
+
+Here at DSON we've been receiving a lot of great community feedback. Most of which sounded something like this "Dear DSON, you are awesome! My only wish is that I had an unlimited supply of objects to describe with DSON." Well, you asked and we delivered! Introducing the new DSON component "Say, what!?" - a random DSON generator! This isn't your mama's random generator either, you get DSON that describes some random real entity using Wikipedia/DBPedia behind the scenes! Go ahead everyone, get yer' DSON on!!!!
+
+
+11/24/2013
+
 Attention DSON army! There are now two DSON invalidators checked in, with the plan for several more in coming weeks - 
 including the much anticipated RandomInvalidator which will randomly apply one or more invalidators to your DSON 
 string. Most serialization frameworks give you a way to validate their formats, but here at DSON, to provide you 
@@ -31,7 +38,8 @@ the future!
 
 __Current DSON components__
 
-+ Glowtoe - the core DSON parsing utilities, including validators, parsers, generators, and invalidators
++ glowtoe - the core DSON parsing utilities, including validators, parsers, generators, and invalidators
++ saywhat - the random DSON generator
 
 __DSON FAQ__
 
